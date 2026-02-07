@@ -1,0 +1,36 @@
+name: Auto-Index Subfolders
+on:
+  push:
+    branches: [ main ]
+jobs:
+  rebuild-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Generate Folder List
+        run: |
+          echo "# The Query Plan" > README.md
+          echo "**Mapping the Logic of Data**" >> README.md
+          echo "" >> README.md
+          echo "### 📂 Problem Index" >> README.md
+          echo "| ID | Problem | Documentation |" >> README.md
+          echo "|:---|:---|:---|" >> README.md
+          
+          # Loop through folders starting with numbers (01, 02, etc.)
+          for dir in [0-9]*/; do
+            # Remove trailing slash for the name
+            name=${dir%/}
+            # Create a clean title (replace dashes with spaces)
+            title=$(echo $name | sed 's/-/ /g')
+            echo "| ${name%%-*} | [$title](./$name) | [View Log](./$name) |" >> README.md
+          done
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "chore: auto-update index" || exit 0
+          git push
