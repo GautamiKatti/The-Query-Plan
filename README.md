@@ -25,6 +25,7 @@ This repository tracks my journey through **SQL internals**. It serves as a livi
 |:---|:---:|:---|
 | **01** | ✅ | [Article Views](./01-Article-Views-I) | 
 | **02** | ✅ | [Recyclable and Low Fat Products](./02-Recyclable-and-Low-Fat-Products) | 
+| **03** | ✅ | [Product Sales Analysis](./03-Product-Sales-Analysis) | 
 
 ---
 <div align="center">
