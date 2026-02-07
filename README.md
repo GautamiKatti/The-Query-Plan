@@ -23,8 +23,8 @@ This repository tracks my journey through **SQL internals**. It serves as a livi
 ### 📂 The Log Index
 | ID | Status | Technical Topic | 
 |:---|:---:|:---|
-| **01** | ✅ | [Intra-Row Identity](./01-Article-Views-I) | 
-| **02** | ✅ | [Boolean Conjunction](./02-Recyclable-Products) | 
+| **01** | ✅ | [Article Views](./01-Article-Views-I) | 
+| **02** | ✅ | [Recyclable and Low Fat Products](./02-Recyclable-and-Low-Fat-Products) | 
 
 ---
 <div align="center">
