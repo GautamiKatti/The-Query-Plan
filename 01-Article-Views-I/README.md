@@ -37,5 +37,5 @@ ORDER BY
 ---
 
 ### 🔗 Next Steps
-* **Next Problem:** [02: Boolean Conjunction Filtering]()
+* **Next Problem:** [02: Boolean Conjunction Filtering](https://github.com/GautamiKatti/The-Query-Plan/tree/main/02-Recyclable-and-Low-Fat-Products)
 * **Series Index:** [The Query Plan](https://github.com/GautamiKatti/The-Query-Plan)
